@@ -6,4 +6,6 @@ import com.nttdata.crm.entity.Product;
 
 public interface ProductRepository extends JpaRepository<Product, Integer>{
 
+	Product findByName(String name);
+
 }
